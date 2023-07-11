@@ -11,7 +11,7 @@ generateBtn.addEventListener("click", () => {
 
   let pool = [alphaCap, alphaSmall, numbers, specChars];
   let pass = "";
-  let passLength = Number(lenInput.value);
+  let passLength = Number(lenInput.value) | 10;
   if (passLength <= 30) {
     for (let i = 0; i < passLength; i++) {
       let currentType = pool[Math.floor(Math.random() * pool.length)];
