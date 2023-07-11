@@ -6,9 +6,10 @@ let lenInput = document.querySelector("#passLength");
 generateBtn.addEventListener("click", () => {
   let alphaCap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let alphaSmall = "abcdefghijklmnopqrstuvwxyz";
+  let numbers = "0123456789";
   let specChars = "!@#$%^&*-_=+~";
 
-  let pool = [alphaCap, alphaSmall, specChars];
+  let pool = [alphaCap, alphaSmall, numbers, specChars];
   let pass = "";
   let passLength = Number(lenInput.value);
   if (passLength <= 30) {
